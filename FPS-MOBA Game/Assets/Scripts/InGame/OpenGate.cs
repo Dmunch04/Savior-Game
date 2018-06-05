@@ -33,9 +33,13 @@ public class OpenGate : MonoBehaviour {
     void Update () {
         // Find a NetworkManager component
         NetworkManager nm = FindObjectOfType<NetworkManager>();
+        // Makes a variable for the current amount of players
+        int curPlayers = nm.numPlayers;
+        // Makes a variable for the max amount of players
+        float maxPlayers = nm.matchSize;
 
         // Checks if theres enough players in the match. (Change the amount later!)
-        if (nm.numPlayers == 1)
+        if (curPlayers == 2)
         {
             if (curCountdownNum <= 20 && curCountdownNum > 0)
             {
@@ -73,6 +77,18 @@ public class OpenGate : MonoBehaviour {
                     gate2.gameObject.SetActive(false);
                 }
             }
+        }
+        // This happens if there's less than the maximum of players (10) in the match
+        else
+        {
+            // Enables the text
+            countdownText.enabled = true;
+
+            // Sets the font size to 20
+            countdownText.fontSize = 20;
+
+            // Sets the content of the text
+            countdownText.text = "Waiting for players (" + curPlayers + "/" + maxPlayers + ")...";
         }
 
 	}
