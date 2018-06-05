@@ -12,7 +12,7 @@ public class OpenGate : MonoBehaviour {
 
     // Getting the countdown text
     public Text countdownText;
-    // Making a float called curCountdownNum. Whick will be storing the countdown
+    // Making a float called curCountdownNum. Which will be storing the countdown
     private float curCountdownNum;
 
     // Getting the 2 colors
