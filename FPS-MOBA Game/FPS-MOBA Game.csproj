@@ -230,9 +230,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Database Control Free\Demos\C#\Scripts\DCF_DemoScene_ManagerScript_CSharp.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\InGame\OpenGate.cs" />
     <Compile Include="Assets\Scripts\Misc\Billboard.cs" />
     <Compile Include="Assets\Scripts\Misc\Bullet.cs" />
     <Compile Include="Assets\Scripts\Misc\Health.cs" />
@@ -242,6 +245,8 @@
     <Compile Include="Assets\Scripts\PlayerServers\HostGame.cs" />
     <Compile Include="Assets\Scripts\PlayerServers\JoinGame.cs" />
     <Compile Include="Assets\Scripts\PlayerServers\MatchListItem.cs" />
+    <Compile Include="Assets\Scripts\UI\ButtonHover.cs" />
+    <Compile Include="Assets\Scripts\UI\ImageRotate.cs" />
     <Compile Include="Assets\Scripts\UI\LoginMenu.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\User Account\UserAccount_Menu.cs" />

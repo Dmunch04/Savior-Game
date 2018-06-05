@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9338235, g: 0.10299523, b: 0.10299523, a: 1}
+  m_Color: {r: 0.9117647, g: 0.20112453, b: 0.20112453, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2179,7 +2179,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.15294118, g: 0.15294118, b: 0.15294118, a: 0.15294118}
+  m_BackGroundColor: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 1260433784}
   - component: {fileID: 1260433783}
   m_Layer: 5
-  m_Name: LoadingText
+  m_Name: Loading Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2863,6 +2863,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1344730232}
+  - component: {fileID: 1344730233}
   m_Layer: 5
   m_Name: Loading
   m_TagString: Untagged
@@ -2890,6 +2891,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1344730233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344730231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83caebfb718838d4d8d4a59ddb3cef70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1830036420}
 --- !u!1 &1362743840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,7 +3545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9338235, g: 0.10299523, b: 0.10299523, a: 1}
+  m_Color: {r: 0.9117647, g: 0.20112453, b: 0.20112453, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4199,7 +4212,7 @@ GameObject:
   - component: {fileID: 1830036422}
   - component: {fileID: 1830036421}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Loading Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
