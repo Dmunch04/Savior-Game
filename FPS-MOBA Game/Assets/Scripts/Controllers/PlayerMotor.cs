@@ -10,6 +10,8 @@ public class PlayerMotor : MonoBehaviour {
     private Vector3 rotation = Vector3.zero;
     private Vector3 cameraRotation = Vector3.zero;
 
+    private bool inField = false;
+
     private Rigidbody rb;
 
     void Start()
@@ -56,6 +58,24 @@ public class PlayerMotor : MonoBehaviour {
         if (cam != null)
         {
             cam.transform.Rotate(-cameraRotation);
+        }
+    }
+
+    void OnTriggerEnter(Collider field)
+    {
+        if (field.tag == "CaptureField")
+        {
+            inField = true;
+            Debug.Log("You entered it!");
+        }
+    }
+
+    void OnTriggerExit(Collider field)
+    {
+        if (field.tag == "CaptureField")
+        {
+            inField = false;
+            Debug.Log("You left it!");
         }
     }
 

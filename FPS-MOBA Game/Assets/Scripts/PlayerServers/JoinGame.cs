@@ -23,6 +23,8 @@ public class JoinGame : MonoBehaviour {
     public GameObject hostScreen;
     public GameObject joinScreen;
 
+    public Image switchButtonImage;
+
     void Start()
     {
         networkManager = NetworkManager.singleton;
@@ -40,11 +42,13 @@ public class JoinGame : MonoBehaviour {
         {
             hostScreen.gameObject.SetActive(true);
             joinScreen.gameObject.SetActive(false);
+            switchButtonImage.transform.Rotate(new Vector3(0, 0, 180));
         }
         else
         {
             hostScreen.gameObject.SetActive(false);
             joinScreen.gameObject.SetActive(true);
+            switchButtonImage.transform.Rotate(new Vector3(0, 0, -180));
         }
     }
 

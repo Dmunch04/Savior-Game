@@ -39,7 +39,7 @@ public class OpenGate : MonoBehaviour {
         float maxPlayers = nm.matchSize;
 
         // Checks if theres enough players in the match. (Change the amount later!)
-        if (curPlayers == 2)
+        if (curPlayers == 1)
         {
             if (curCountdownNum <= 20 && curCountdownNum > 0)
             {
