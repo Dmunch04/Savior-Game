@@ -2,24 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.Networking.Match;
 
 public class PauseMenu : MonoBehaviour {
 
-    public GameObject pauseMenu;
-	
-	// Update is called once per frame
-	void Update () {
+    public static bool IsOn = false;
 
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                if (pauseMenu.activeInHierarchy == true)
-                {
-                    pauseMenu.SetActive(false);
-                }
-                else
-                {
-                    pauseMenu.SetActive(true);
-                }
-            }
-        }
+    private NetworkManager nm;
+
+    void Start()
+    {
+        nm = NetworkManager.singleton;
+    }
+
+    public void ResumeGame ()
+    {
+
+    }
+
+    public void LeaveGame ()
+    {
+        MatchInfo matchInfo = nm.matchInfo;
+
+        nm.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0, nm.OnDropConnection);
+        nm.StopHost();
+    }
+
 }

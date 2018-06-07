@@ -26,6 +26,10 @@ public class PlayerShoot : NetworkBehaviour {
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            // Checks if the pause menu is on. Returns if it's on
+            if (PauseMenu.IsOn)
+                return;
+
             // Shoot
             Shoot();
         }

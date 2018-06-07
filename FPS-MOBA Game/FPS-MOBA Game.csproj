@@ -224,17 +224,8 @@
     <Reference Include="DatabaseControl">
       <HintPath>Assets/Database Control Free/Scripts/DatabaseControl.dll</HintPath>
     </Reference>
-    <Reference Include="TextMeshPro-1.0.55.2017.2.0b12">
-      <HintPath>Assets/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.2.0b12.dll</HintPath>
-    </Reference>
     <Reference Include="ProBuilderCore-Unity5">
       <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
-    </Reference>
-    <Reference Include="pb_Stl">
-      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
-    </Reference>
-    <Reference Include="Poly2Tri">
-      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="ProBuilderMeshOps-Unity5">
       <HintPath>Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
@@ -242,10 +233,20 @@
     <Reference Include="KdTreeLib">
       <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
     </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Poly2Tri">
+      <HintPath>Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-1.0.55.2017.2.0b12">
+      <HintPath>Assets/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.2.0b12.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Database Control Free\Demos\C#\Scripts\DCF_DemoScene_ManagerScript_CSharp.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
+    <Compile Include="Assets\PlayerUI.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />

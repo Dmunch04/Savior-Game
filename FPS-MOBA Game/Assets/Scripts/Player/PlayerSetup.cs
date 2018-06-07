@@ -9,6 +9,12 @@ public class PlayerSetup : NetworkBehaviour {
     [SerializeField]
     string remoteLayerName = "RemotePlayer";
 
+    [SerializeField]
+    GameObject playerUIPrefab;
+    private GameObject playerUIInstance;
+
+    string ID;
+
     void Start()
     {
         if (!isLocalPlayer)
@@ -18,11 +24,15 @@ public class PlayerSetup : NetworkBehaviour {
         }
 
         RegisterPlayer();
+
+        // Create PlayerUI
+        playerUIInstance = Instantiate(playerUIPrefab);
+        playerUIInstance.name = ID + " - " + playerUIPrefab.name;
     }
 
     void RegisterPlayer()
     {
-        string ID = "Player: " + GetComponent<NetworkIdentity>().netId;
+        ID = "Player: " + GetComponent<NetworkIdentity>().netId;
         transform.name = ID;
     }
 

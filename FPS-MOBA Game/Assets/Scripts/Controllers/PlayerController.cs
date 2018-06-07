@@ -20,7 +20,23 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(Cursor.lockState != CursorLockMode.Locked)
+        // Checks if the pause menu is on. Returns if it's on
+        if (PauseMenu.IsOn)
+        {
+            // Make the cursor unlocked, so now it can move anywhere
+            if (Cursor.lockState != CursorLockMode.None)
+                Cursor.lockState = CursorLockMode.None;
+
+            // Locks all movement and rotation
+            motor.Move(Vector3.zero);
+            motor.Rotate(Vector3.zero);
+            motor.CameraRotate(Vector3.zero);
+
+            return;
+        }
+
+        // Locking the cursor
+        if (Cursor.lockState != CursorLockMode.Locked)
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
