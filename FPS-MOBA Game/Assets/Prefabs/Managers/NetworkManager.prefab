@@ -151,4 +151,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   errorText: {fileID: 0}
+  legend1: {fileID: 1746830760964798, guid: 6df9c4870c374eb44b1994965da69714, type: 2}
+  legend2: {fileID: 1746830760964798, guid: 8c39c0fc6f6694d4c90d14d4c140ffa7, type: 2}
+  legend3: {fileID: 1746830760964798, guid: b73b999fc166cbf4a886e18bc5dc58e7, type: 2}
+  legend4: {fileID: 1746830760964798, guid: 703dfe496524716429bbe9142110aece, type: 2}
+  legend5: {fileID: 1746830760964798, guid: ce208c9ef9905e443928ad002814a73f, type: 2}
+  legend6: {fileID: 1746830760964798, guid: 948627c40c5861b4f8ec6f122d98c872, type: 2}
+  legend7: {fileID: 1746830760964798, guid: 169848ce21f69134bb9c5fc71a9a3b9a, type: 2}
+  legend8: {fileID: 1746830760964798, guid: 0fa13922ba0d6a144b37d18f9b93f838, type: 2}
+  legend9: {fileID: 1746830760964798, guid: 5076781b93a05a045a0b3ba4dbacd97b, type: 2}
+  legend10: {fileID: 1746830760964798, guid: 7b3a320ddfc98f542bd3e4100cc66430, type: 2}
   matchSize: 10
