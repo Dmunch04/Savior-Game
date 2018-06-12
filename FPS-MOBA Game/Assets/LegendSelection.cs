@@ -4,37 +4,42 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
-public class LegendSelection : MonoBehaviour {
+public class LegendSelection : NetworkBehaviour {
 
+    // Creates the IsOn bool for the pause menu and sets it to true
     public static bool IsOn = true;
 
+    //[SerializeField]
+    //GameObject playerGraphicsPrefab;
+
+    // Getting the network manager
     private NetworkManager nm;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void OpenCategoty (GameObject disable)
+    void Start ()
     {
-        //enable.SetActive(true);
-        disable.SetActive(false);
+        nm = NetworkManager.singleton;
     }
 
+    // This is a function for closing a game object. The game object is given in the inspector
     public void ClosePanel (GameObject disable)
     {
+        // This will disable the game object you put in the inspector
         disable.SetActive(false);
     }
 
-    public void OpenPanel(GameObject enable)
+    // This is a function for opening a game object. The game object is given in the inspector
+    public void OpenPanel (GameObject enable)
     {
+        // This will enable the game object you put in the inspector
         enable.SetActive(true);
     }
 
+    public void SetPlayerGraphic (GameObject graphics)
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        //nm.playerPrefab = graphics;
+    }
 
 }

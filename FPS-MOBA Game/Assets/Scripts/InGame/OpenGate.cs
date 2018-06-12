@@ -75,6 +75,9 @@ public class OpenGate : MonoBehaviour {
                 // Checks if the countdown has reached 0
                 if (curCountdownNum == 0f || countdownText.text == "0")
                 {
+                    // Sets the IsGoing bool to false to indicate that it aren't counting down
+                    IsGoing = false;
+
                     // Disables the countdown text
                     countdownText.enabled = false;
     
@@ -87,9 +90,6 @@ public class OpenGate : MonoBehaviour {
         // This happens if there's less than the maximum of players (10) in the match
         else
         {
-            // Sets the IsGoing bool to false to indicate that it aren't counting down
-            IsGoing = false;
-
             // Enables the text
             countdownText.enabled = true;
 

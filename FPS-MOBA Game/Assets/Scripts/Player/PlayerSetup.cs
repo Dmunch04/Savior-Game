@@ -3,6 +3,10 @@ using UnityEngine.Networking;
 
 public class PlayerSetup : NetworkBehaviour {
 
+    public static bool IsLocalPlayer;
+
+    GameObject t1;
+
     [SerializeField]
     Behaviour[] componentsToDisable;
 
@@ -19,9 +23,12 @@ public class PlayerSetup : NetworkBehaviour {
     {
         if (!isLocalPlayer)
         {
+            IsLocalPlayer = false;
             DisableStartComponent();
             AssignRemoteLayer();
         }
+
+        IsLocalPlayer = true;
 
         RegisterPlayer();
 
@@ -34,6 +41,12 @@ public class PlayerSetup : NetworkBehaviour {
     {
         ID = "Player: " + GetComponent<NetworkIdentity>().netId;
         transform.name = ID;
+    }
+
+    public void SwitchGraphics (GameObject gra)
+    {
+        t1 = this.gameObject;
+        t1 = gra;
     }
 
     void DisableStartComponent()

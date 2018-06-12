@@ -2269,6 +2269,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   errorText: {fileID: 1712677272}
+  legend1: {fileID: 0}
+  legend2: {fileID: 0}
+  legend3: {fileID: 0}
+  legend4: {fileID: 0}
+  legend5: {fileID: 0}
+  legend6: {fileID: 0}
+  legend7: {fileID: 0}
+  legend8: {fileID: 0}
+  legend9: {fileID: 0}
+  legend10: {fileID: 0}
   matchSize: 10
 --- !u!114 &1954558491
 MonoBehaviour:

@@ -13,21 +13,29 @@ public class PlayerUI : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        // Runs the function for toggling the selection menu
         ToggleSelectionMenu();
 
+        // Sets the IsOn bool from the LegendSelection script to true.
+        //This will block movement and rotation and lock the cursor from start
         LegendSelection.IsOn = true;
 
+        // Sets the IsOn bool from the PauseMenu script to false.
+        // This will make sure the movement and rotation and cursor lock
+        //is not activated at start
         PauseMenu.IsOn = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        while (OpenGate.IsGoing == true)
+        // Checks if the bool made in the OpenGate script is true
+        if (OpenGate.IsGoing == true)
         {
             // Checks if the player presses the escape key
             if (Input.GetKeyDown(KeyCode.E))
             {
+                // Runs the function for toggling the selection menu
                 ToggleSelectionMenu();
             }
         }
@@ -35,10 +43,12 @@ public class PlayerUI : MonoBehaviour {
         // Checks if the player presses the escape key
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            // Runs the function for toggling the selection menu
             TogglePauseMenu();
         }
     }
 
+    // In this function we disables and enables the pause menu
     public void TogglePauseMenu()
     {
         // Toggles the pause menu on & off depending on it's current state
@@ -47,15 +57,11 @@ public class PlayerUI : MonoBehaviour {
         PauseMenu.IsOn = pauseMenu.activeSelf;
     }
 
+    // In this function we disables and enables the pause menu
     public void ToggleSelectionMenu ()
     {
-        if (LegendSelection.IsOn)
-        {
-            selectionMenu.SetActive(true);
-        }
-
         // Toggles the selection menu on & off depending on it's current state
-        selectionMenu.SetActive(!pauseMenu.activeSelf);
+        selectionMenu.SetActive(!selectionMenu.activeSelf);
         // Sets the bool to the state of the selection menu (On or Off)
         LegendSelection.IsOn = selectionMenu.activeSelf;
     }
