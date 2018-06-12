@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
     void Update()
     {
         // Checks if the pause menu is on. Returns if it's on
-        if (PauseMenu.IsOn)
+        if (PauseMenu.IsOn || LegendSelection.IsOn)
         {
             // Make the cursor unlocked, so now it can move anywhere
             if (Cursor.lockState != CursorLockMode.None)

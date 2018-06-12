@@ -246,6 +246,7 @@
   <ItemGroup>
     <Compile Include="Assets\Database Control Free\Demos\C#\Scripts\DCF_DemoScene_ManagerScript_CSharp.cs" />
     <Compile Include="Assets\HostManager.cs" />
+    <Compile Include="Assets\LegendSelection.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\PlayerUI.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />

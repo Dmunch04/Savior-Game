@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class OpenGate : MonoBehaviour {
 
+    // Making the bool for indicating whether it's counting down or not
+    public static bool IsGoing;
+
     // Getting the gates
     public Transform gate1;
     public Transform gate2;
@@ -43,6 +46,9 @@ public class OpenGate : MonoBehaviour {
         {
             if (curCountdownNum <= 20 && curCountdownNum > 0)
             {
+                // Sets the IsGoing bool to true to indicate that it is counting down
+                IsGoing = true;
+
                 // Enables the countdown text
                 countdownText.enabled = true;
 
@@ -81,6 +87,9 @@ public class OpenGate : MonoBehaviour {
         // This happens if there's less than the maximum of players (10) in the match
         else
         {
+            // Sets the IsGoing bool to false to indicate that it aren't counting down
+            IsGoing = false;
+
             // Enables the text
             countdownText.enabled = true;
 
