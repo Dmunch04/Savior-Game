@@ -32,19 +32,12 @@ public class PlayerUI : MonoBehaviour {
         // Checks if the bool made in the OpenGate script is true
         if (OpenGate.IsGoing == true)
         {
-            // Checks if the player presses the escape key
+            // Checks if the player presses the E key
             if (Input.GetKeyDown(KeyCode.E))
             {
                 // Runs the function for toggling the selection menu
                 ToggleSelectionMenu();
             }
-        }
-
-        // Checks if the player presses the escape key
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            // Runs the function for toggling the selection menu
-            TogglePauseMenu();
         }
     }
 
