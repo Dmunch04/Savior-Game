@@ -15,7 +15,10 @@ public class OpenGate : MonoBehaviour {
 
     // Getting the countdown text
     public Text countdownText;
-    // Making a float called curCountdownNum. Which will be storing the countdown
+    // Making a float called countdownNum. This will be storing the number it should countdown from. By making this public we allow us
+    // to change it in the inspector. We set it's default to be 20 seconds
+    public float countdownNum = 20f;
+    // Making a float called curCountdownNum. Which will be storing the current countdown number
     private float curCountdownNum;
 
     // Getting the 2 colors
@@ -26,7 +29,7 @@ public class OpenGate : MonoBehaviour {
     void Start()
     {
         // Sets the length of the countdown
-        curCountdownNum = 20f;
+        curCountdownNum = countdownNum;
 
         // Disables the countdown text
         countdownText.enabled = false;
