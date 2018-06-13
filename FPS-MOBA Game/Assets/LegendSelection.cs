@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
-public class LegendSelection : NetworkBehaviour {
+public class LegendSelection : MonoBehaviour {
 
-    // Creates the IsOn bool for the pause menu and sets it to true
+    // Creates the IsOn bool for the selection menu and sets it to true
     public static bool IsOn = true;
 
     //[SerializeField]
@@ -34,8 +34,10 @@ public class LegendSelection : NetworkBehaviour {
         enable.SetActive(true);
     }
 
+    // This function will make the graphics, of the player that runs this, change
     public void SetPlayerGraphic (GameObject graphics)
     {
+        // Here we check if it's the local player. If it's not then we return. We check this by looking in the PlaayerSetup script
         if (!PlayerSetup.IsLocalPlayer)
             return;
 
