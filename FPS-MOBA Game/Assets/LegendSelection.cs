@@ -15,8 +15,12 @@ public class LegendSelection : MonoBehaviour {
     // Getting the network manager
     private NetworkManager nm;
 
+    private ChangeModel cm;
+
     void Start ()
     {
+        cm = GetComponent<ChangeModel>();
+
         nm = NetworkManager.singleton;
     }
 
@@ -43,5 +47,83 @@ public class LegendSelection : MonoBehaviour {
 
         //nm.playerPrefab = graphics;
     }
+
+    public void SetLegend1 ()
+    {
+        cm.Switch1();
+        GetComponent<ChangeModel>().Switch1();
+    }
+
+    public void SetLegend2 ()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch2();
+    }
+
+    public void SetLegend3 ()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch3();
+    }
+
+    public void SetLegend4()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch4();
+    }
+
+    public void SetLegend5 ()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch5();
+    }
+
+    public void SetLegend6()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch6();
+    }
+
+    public void SetLegend7 ()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch7();
+    }
+
+    public void SetLegend8 ()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch8();
+    }
+
+    public void SetLegend9 ()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch9();
+    }
+    public void SetLegend10 ()
+    {
+        if (!PlayerSetup.IsLocalPlayer)
+            return;
+
+        cm.Switch10();
+    }
+
 
 }

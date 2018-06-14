@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1038
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 988
-  m_MinSize: {x: 683, y: 342}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 60
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1530
     height: 988
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+  m_MinSize: {x: 406, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 74
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 75
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,14 +228,14 @@ MonoBehaviour:
     y: 592
     width: 1530
     height: 396
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,7 +309,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -368,23 +368,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3880feff
-    m_LastClickedID: -98248
-    m_ExpandedIDs: 9c7ffeffd08ffeff9899feffe6b0feff46b1feff52b1feff82b1feffaab1feff3203ffff3e03ffff4c03ffff5603ffff6e03ffff9603ffff0824ffff1424ffff4424ffff6c24ffffa432ffffd432fffffc32ffff9a89fffffe89ffff28beffff88beffffecbeffff5eceffff6aceffff9aceffffc2ceffffb4d2ffff60f6ffff98fbfffff4ffffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 640cfdffc00cfdfff20cfdff1a0dfdff8624fdffe624fdff4225fdff7425fdff9c25fdffea3afdff1c3bfdff443bfdff80a6fdffe0a6fdff3ca7fdff6ca7fdff94a7fdff14c4fdff6cf6ffff7efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: PlayerUI
+      m_OriginalName: PlayerUI
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -199386
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -422,13 +422,13 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 385.37963666205764
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 468.6119, y: 294.01, z: 18.470703}
+    m_Target: {x: 488.81912, y: 130.3016, z: 8.810854}
     speed: 2
-    m_Value: {x: 468.6119, y: 294.01, z: 18.470703}
+    m_Value: {x: 488.81912, y: 130.3016, z: 8.810854}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -444,27 +444,28 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: -0.0018097325, y: 0.0065965718, z: -0.000011820902, w: -0.99997663}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.0018097325, y: 0.0065965718, z: -0.000011820902, w: -0.99997663}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 667.7416
+    m_Target: 741.3536
     speed: 2
-    m_Value: 667.7416
+    m_Value: 741.3536
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.0018097325, y: 0.0065965718, z: -0.000011820902,
+    w: -0.99997663}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -536,19 +537,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs/Legends/Prefabs
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 81
   m_LastFolders:
-  - Assets/Prefabs/Legends/Prefabs
+  - Assets/Prefabs
   m_LastFoldersGridSize: 81
   m_LastProjectPath: E:\Users\Daniel\Documents\GitHub\Savior-Game\FPS-MOBA Game
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 4e2f0000
-    m_LastClickedID: 12110
-    m_ExpandedIDs: 00000000782a0000d62a0000aa2b00006c2c0000c22c0000082d00005a2d00005e2d0000762d0000702f0000a82f00004630000062300000e23000000a3100006a31000098310000ba310000e836000000ca9a3bffffff7f
+    m_SelectedIDs: 22310000
+    m_LastClickedID: 12578
+    m_ExpandedIDs: 00000000902a0000ee2a0000c22b0000842c0000da2c0000202d0000722d0000762d00008e2d0000882f0000c02f00005e3000007a300000fa3000002231000082310000b0310000d23100006434000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,7 +577,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000782a0000d62a0000aa2b00006c2c0000c22c0000082d00005a2d00005e2d0000762d0000702f0000a82f00004630000062300000e23000000a3100006a31000098310000ba310000e8360000
+    m_ExpandedIDs: 00000000902a0000ee2a0000c22b0000842c0000da2c0000202d0000722d0000762d00008e2d0000882f0000c02f00005e3000007a300000fa3000002231000082310000b0310000d231000064340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

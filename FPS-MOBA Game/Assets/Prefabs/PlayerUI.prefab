@@ -1210,7 +1210,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c8ae2f06fac77b48a6fd424adc72750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerGraphicsPrefab: {fileID: 0}
+  legends:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  baseModel: {fileID: 0}
+  legend1: {fileID: 0}
+  legend2: {fileID: 0}
+  legend3: {fileID: 0}
+  legend4: {fileID: 0}
+  legend5: {fileID: 0}
+  legend6: {fileID: 0}
+  legend7: {fileID: 0}
+  legend8: {fileID: 0}
+  legend9: {fileID: 0}
+  legend10: {fileID: 0}
 --- !u!114 &114387897895456856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1790,12 +1811,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114305246830969114}
-        m_MethodName: SetPlayerGraphic
-        m_Mode: 2
+        m_MethodName: SetLegend1
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1746830760964798, guid: 6df9c4870c374eb44b1994965da69714,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
